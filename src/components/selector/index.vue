@@ -33,9 +33,6 @@
           :value="value === null ? 'null' : ''"
           v-if="showPlaceholder"
           :selected="isEmptyValue(value) && !!placeholder">{{ placeholder }}</option>
-        <v-no-ssr>
-          <option disabled v-if="fixIos"></option>
-        </v-no-ssr>
         <option
           :value="one.key"
           v-for="one in processOptions">{{ direction === 'rtl' ? one.value + '&#x200E;' : one.value }}</option>

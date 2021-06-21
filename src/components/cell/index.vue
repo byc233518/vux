@@ -26,9 +26,6 @@
     <div class="weui-cell__ft" :class="valueClass">
       <slot name="value"></slot>
       <slot>{{ value }}</slot>
-      <v-no-ssr>
-        <i class="weui-loading" v-if="isLoading"></i>
-      </v-no-ssr>
     </div>
     <slot name="child"></slot>
   </div>
