@@ -26,8 +26,8 @@
         </div>
       </template>
       <div class="weui-dialog__ft">
-        <a v-if="showCancelButton" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default" @click="_onCancel">{{cancelText || $t('cancel_text')}}</a>
-        <a v-if="showConfirmButton" href="javascript:;" class="weui-dialog__btn" :class="`weui-dialog__btn_${confirmType}`" @click="_onConfirm">{{confirmText || $t('confirm_text')}}</a>
+        <a v-if="showCancelButton" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default" @click="_onCancel">{{cancelText || '取消'}}</a>
+        <a v-if="showConfirmButton" href="javascript:;" class="weui-dialog__btn" :class="`weui-dialog__btn_${confirmType}`" @click="_onConfirm">{{confirmText || '确定'}}</a>
       </div>
     </x-dialog>
   </div>

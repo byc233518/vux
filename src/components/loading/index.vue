@@ -11,7 +11,7 @@
           position: position
         }">
         <i class="weui-loading weui-icon_toast"></i>
-        <p class="weui-toast__content" v-if="text">{{ $t(text) || $t('loading') }}<slot></slot></p>
+        <p class="weui-toast__content" v-if="text">{{ text || '加载中' }}<slot></slot></p>
       </div>
     </div>
   </transition>

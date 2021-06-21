@@ -26,7 +26,7 @@
     <table>
       <thead v-show="!hideWeekList">
         <tr>
-          <th v-for="(week, index) in _weeksList" class="week" :class="`is-week-list-${index}`">{{ week || $t('week_day_' + index /* en: week, zh-CN: week */) }}</th>
+          <th v-for="(week, index) in _weeksList" class="week" :class="`is-week-list-${index}`">{{ week }}</th>
         </tr>
       </thead>
       <tbody>

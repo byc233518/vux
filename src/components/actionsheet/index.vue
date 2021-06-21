@@ -23,7 +23,7 @@
               class="weui-actionsheet__cell"
               v-for="(text, key) in menus"
               @click="onMenuClick(text, key)"
-              v-html="$t(text.label || text)">
+              v-html="text.label || text">
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
           class="weui-actionsheet__cell"
           v-for="(text, key) in menus"
           @click="onMenuClick(text, key)"
-          v-html="$t(text.label || text)"
+          v-html="text.label || text"
           :class="`vux-actionsheet-menu-${text.type || 'default'}`">
         </div>
       </div>
@@ -51,7 +51,7 @@
         class="weui-actionsheet__action"
         @click="emitEvent('on-click-menu', 'cancel')"
         v-if="showCancel">
-        <div class="weui-actionsheet__cell">{{cancelText || $t('cancel')}}</div>
+        <div class="weui-actionsheet__cell">{{cancelText || '取消'}}</div>
       </div>
     </div>
 

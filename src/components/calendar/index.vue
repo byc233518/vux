@@ -19,8 +19,8 @@
           @on-click-left="onClickLeft"
           @on-click-right="onClickRight"
           :title="popupHeaderTitle"
-          :left-text="$t('cancel_text')"
-          :right-text="$t('confirm_text')"></popup-header>
+          :left-text="cancel_text || '取消'"
+          :right-text="confirm_text || '确定'"></popup-header>
 
         <slot name="popup-before-calendar"></slot>
 

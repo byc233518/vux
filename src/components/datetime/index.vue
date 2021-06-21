@@ -2,8 +2,8 @@
   <a
     class="vux-datetime weui-cell"
     :class="{'weui-cell_access': !readonly}"
-    :data-cancel-text="$t('cancel_text')"
-    :data-confirm-text="$t('confirm_text')"
+    :data-cancel-text="'取消'"
+    :data-confirm-text="'确定'"
     href="javascript:">
     <slot>
       <div>

@@ -56,7 +56,7 @@ extra:
 
     AlertModule.show({
       title: 'VUX is Cool',
-      content: this.$t('Do you agree?'),
+      content: '确定?',
       onShow () {
         console.log('Module: I\'m showing')
       },
